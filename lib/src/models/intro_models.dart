@@ -12,7 +12,7 @@ class IntroModel{
     IntroModel(
         imagePath: 'assets/intro1.png',
       title: 'Find the food you like',
-        description: 'Discover the best food over 1000 nearest restaurants.'
+        description: 'Discover the best food over 1000 nearest restaurants..'
     ),
     IntroModel(
         imagePath: 'assets/intro2.png',
