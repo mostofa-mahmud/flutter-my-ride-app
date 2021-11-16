@@ -14,7 +14,7 @@ class _Splash_srcnState extends State<Splash_srcn> {
   @override
   void initState(){
     super.initState();
-    Timer(const Duration(seconds: 5), (){
+    Timer(const Duration(seconds: 3), (){
       Navigator.pushReplacementNamed(context, '/intro');
     });
   }

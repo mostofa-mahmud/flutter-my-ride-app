@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
         routes: {
           "/" : (context)=> const Splash_srcn(),
           "/intro" : (context)=> Intro_page(),
-          "/starter" : (context)=> StarterPage(),
         },
       ),
     );

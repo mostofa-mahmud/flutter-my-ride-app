@@ -83,21 +83,20 @@ class _Intro_pageState extends State<Intro_page> {
               child: Text(
                   _data[_activeIndex].description!,
                 style: Theme.of(context).textTheme.bodyText1!.copyWith(
-                  color: secondaryFontColor,
+                  color: introDesColor,
                   height: 4.h
                 ),
               ),
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 60.w, vertical: 120.h),
+            padding: EdgeInsets.symmetric(horizontal: 180.w, vertical: 120.h),
             child: Row(
               children: [
                 Expanded(
                   child: ElevatedButton(
                       onPressed: (){
                         if((_activeIndex + 1)>= _data.length) {
-                          Navigator.pushReplacementNamed(context, '/starter');
                           return;
                         };
                         _pageController.animateToPage(
@@ -107,14 +106,14 @@ class _Intro_pageState extends State<Intro_page> {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: mainColor,
+                        primary: introBtnColor,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40),
                         ),
                         padding: EdgeInsets.all(15),
                       ),
 
-                      child: Text('Next')
+                      child: Text('Get Started')
                   ),
                 ),
               ],
