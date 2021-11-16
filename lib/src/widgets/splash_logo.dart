@@ -13,27 +13,29 @@ class _SplashLogoState extends State<SplashLogo> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Image.asset('assets/logo.png', fit: BoxFit.fill, width: 300.w,),
-        SizedBox(height: 50.h,),
 
-        Text.rich(
-          TextSpan(text: 'Meal ',
-              style: Theme.of(context).textTheme.headline4!.copyWith(
-                  fontWeight: FontWeight.bold,
-                  color: mainColor
-              ),
-              children: [
-                TextSpan(
-                    text: 'Monkey',
-                    style: TextStyle(color: primaryFontColor)
-                )
-              ]
+        Container(
+          width: 100.0,
+          height: 100.0,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage('assets/my_ride_logo.jpg')
+            ),
+            borderRadius: BorderRadius.all(Radius.circular(30.0)),
           ),
         ),
-        SizedBox(height: 60.h,),
 
-        Text('Food Delivery',
-            style: Theme.of(context).textTheme.bodyText1!.copyWith( color: secondaryFontColor, letterSpacing: 10.w)
+
+        SizedBox(height: 50.h,),
+
+
+
+        Text('MY RIDE',
+            style: Theme.of(context).textTheme.headline4!.copyWith(
+              color: secondaryFontColor,
+              fontWeight: FontWeight.bold
+            )
         )
 
 
