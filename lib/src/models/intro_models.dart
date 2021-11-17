@@ -10,7 +10,7 @@ class IntroModel{
 
   static List<IntroModel> data=[
     IntroModel(
-        imagePath: 'assets/intro1.PNG',
+        imagePath: 'assets/sliderPic.jpeg',
       title: 'May be used as a place',
         description: 'Discover the best Ride sharing experience...'
     ),

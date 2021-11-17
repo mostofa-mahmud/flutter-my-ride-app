@@ -106,7 +106,7 @@ class _Intro_pageState extends State<Intro_page> {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: introBtnColor,
+                        primary: mainColor,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40),
                         ),
